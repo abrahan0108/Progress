@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="#">
+
+    <title>Progress Board</title>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'styles/site.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/font-awesome.min.css' %}">
+</head>
+
+<body>
+
+    <!--<nav class="navbar navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="http://sicisa.net/espanol/">
+            <img src="http://placehold.jp/30x30.png" width="30" height="30" class="d-inline-block align-top" alt=""><h3>Sicisa Progress</h3>
+        </a>
+
+    </nav> -->
+
+    <div class="container">
+
+        <div class="starter-template">
+
+            {% block content %}
+
+            {% endblock %}
+        </div>
+
+    </div>
+
+</body>
+
+</html>
